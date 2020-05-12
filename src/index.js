@@ -4,9 +4,10 @@ import './style.css';
 function component() {
 
   // create div to display content
-  const element = document.createElement('div');
+  //const element = document.createElement('div');
 
-  element.innerHTML = _.join(['hello', 'webpack'], ' ');
+  const element = document.getElementById('main-display')
+  element.innerHTML = _.join("hello test", ' ');
 
   return element;
 }
