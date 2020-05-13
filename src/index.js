@@ -3,26 +3,22 @@ import './style.css';
 //import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function component() {
+import navbar from './navbar';
 
-  const element = document.getElementById('content')
-  element.innerHTML = 
-    '<ul ul class="nav nav-tabs" >' +
-      '<li class="nav-item">' +
-        '<a class="nav-link" href="#">home</a>' +
-      '</li>' +
-      '<li class="nav-item">' +
-        '<a class="nav-link" href="#">menu</a>' +
-      '</li>' +
-      '<li class="nav-item">' +
-        '<a class="nav-link" href="#">contact</a>' +
-      '</li>' +
-      '<li class="nav-item">' +
-        '<a class="nav-link" href="#">about</a>' +
-      '</li>' +
-    '</ul>';
+const view = (() => {
+  const main = document.querySelector('#content');
 
-  return element;
-}
+  const updateView = () => {
+    main.appendChild(navbar);
+    //main.appendChild(home);
+    //home.appendChild(aboutContent);
+    //home.appendChild(menuContent);
+    //home.appendChild(contactContent);
 
-document.body.appendChild(component());
+    document.body.appendChild(main);
+  };
+
+  return { updateView };
+})();
+
+view.updateView();
