@@ -13,7 +13,6 @@ p.innerHTML = 'this is a simple js library app';
 
 const img = new Image();
 img.src = homeImg;
-img.className = "avatar";
 img.setAttribute('width', '100%');
 img.setAttribute('object-fit', 'cover');
 
