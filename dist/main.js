@@ -108,14 +108,14 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"/* universal */\\r\\nhtml, body {\\r\\n  font-size: 16px;\\r\\n  overflow-x: hidden;\\r\\n}\\r\\n\\r\\n/* footer */\\r\\nfooter {\\r\\n  padding: 20px;\\r\\n}\\r\\n\\r\\nfooter small {\\r\\n  float: right;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"/* universal */\\r\\nhtml, body {\\r\\n  font-size: 16px;\\r\\n  overflow-x: hidden;\\r\\n}\\r\\n\\r\\n/* footer */\\r\\nfooter {\\r\\n  padding: 20px;\\r\\n}\\r\\n\\r\\nfooter small {\\r\\n  float: right;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/css/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -143,6 +143,17 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/css/style.css":
+/*!***************************!*\
+  !*** ./src/css/style.css ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/css/style.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/css/style.css?");
+
+/***/ }),
+
 /***/ "./src/footer.js":
 /*!***********************!*\
   !*** ./src/footer.js ***!
@@ -155,18 +166,6 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst hr = document.createEle
 
 /***/ }),
 
-/***/ "./src/home.js":
-/*!*********************!*\
-  !*** ./src/home.js ***!
-  \*********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst home = document.createElement('div');\r\nhome.className = \"jumbotron m-3 p-3\";\r\n\r\nconst h1 = document.createElement('h1');\r\nh1.className = \"display-4\";\r\nh1.innerHTML = 'restaurant-js-webpack';\r\n\r\nconst p = document.createElement('p');\r\np.className = \"lead\";\r\np.innerHTML = 'this is a simple js library app';\r\n\r\n\r\nhome.appendChild(h1);\r\nhome.appendChild(p);\r\n\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\r\n\n\n//# sourceURL=webpack:///./src/home.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -175,7 +174,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst home = document.createE
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n// import stylesheets\r\n\r\n// import bootstrap\r\n\r\n\r\n// import modules\r\n\r\n\r\n\r\n\r\n\r\nconst main = document.querySelector('#content');\r\n\r\nmain.insertAdjacentHTML(\"beforeEnd\", _navbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"].outerHTML);\r\nmain.insertAdjacentHTML(\"beforeEnd\", `<div class=\"activeInfo\"></div>`)\r\nmain.insertAdjacentHTML(\"beforeEnd\", _footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"].outerHTML);\r\n\r\n\r\nconst activeInfo = document.querySelector(\".activeInfo\")\r\nactiveInfo.innerHTML = _home__WEBPACK_IMPORTED_MODULE_3__[\"default\"].outerHTML;\r\n\r\nlet nav = document.querySelector(\".navbar\")\r\n\r\nnav.addEventListener('click', e => {\r\n  if (e.target && e.target.classList.contains(\"nav-link\")) {    \r\n    let selectedMenu = e.target.outerText;\r\n\r\n    switch (selectedMenu) {\r\n      case \"menu\":\r\n        activeInfo.innerHTML = menu.outerHTML;\r\n        break;\r\n      case \"contact\":\r\n        activeInfo.innerHTML = contact.outerHTML;\r\n        break;\r\n      case \"about\":\r\n        activeInfo.innerHTML = about.outerHTML;\r\n        break;\r\n      default:\r\n        activeInfo.innerHTML = _home__WEBPACK_IMPORTED_MODULE_3__[\"default\"].outerHTML;\r\n    }\r\n  }\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _tab_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tab/home */ \"./src/tab/home.js\");\n/* harmony import */ var _tab_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tab/menu */ \"./src/tab/menu.js\");\n// import stylesheets\r\n\r\n// import bootstrap\r\n\r\n\r\n// import modules\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst main = document.querySelector('#content');\r\n\r\nmain.insertAdjacentHTML(\"beforeEnd\", _navbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"].outerHTML);\r\nmain.insertAdjacentHTML(\"beforeEnd\", `<div class=\"activeInfo\"></div>`)\r\nmain.insertAdjacentHTML(\"beforeEnd\", _footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"].outerHTML);\r\n\r\n\r\nconst activeInfo = document.querySelector(\".activeInfo\")\r\nactiveInfo.innerHTML = _tab_home__WEBPACK_IMPORTED_MODULE_4__[\"default\"].outerHTML;\r\n\r\nlet nav = document.querySelector(\".navbar\")\r\n\r\nnav.addEventListener('click', e => {\r\n  if (e.target && e.target.classList.contains(\"nav-link\")) {    \r\n    let selectedMenu = e.target.outerText;\r\n\r\n    switch (selectedMenu) {\r\n      case \"menu\":\r\n        activeInfo.innerHTML = _tab_menu__WEBPACK_IMPORTED_MODULE_5__[\"default\"];\r\n        break;\r\n      case \"contact\":\r\n        activeInfo.innerHTML = contact.outerHTML;\r\n        break;\r\n      case \"about\":\r\n        activeInfo.innerHTML = about.outerHTML;\r\n        break;\r\n      default:\r\n        activeInfo.innerHTML = _tab_home__WEBPACK_IMPORTED_MODULE_4__[\"default\"].outerHTML;\r\n    }\r\n  }\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -191,14 +190,27 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst navbar = document.creat
 
 /***/ }),
 
-/***/ "./src/style.css":
-/*!***********************!*\
-  !*** ./src/style.css ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/tab/home.js":
+/*!*************************!*\
+  !*** ./src/tab/home.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/style.css?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst home = document.createElement('div');\r\nhome.className = \"jumbotron m-3 p-3\";\r\n\r\nconst h1 = document.createElement('h1');\r\nh1.className = \"display-4\";\r\nh1.innerHTML = 'restaurant-js-webpack';\r\n\r\nconst p = document.createElement('p');\r\np.className = \"lead\";\r\np.innerHTML = 'this is a simple js library app';\r\n\r\nconst img = document.createElement('img');\r\n//img.className = \"lead\";\r\nimg.setAttribute('src', '/home.jpg');\r\nimg.setAttribute('alt', 'na');\r\nimg.setAttribute('height', '1px');\r\nimg.setAttribute('width', '1px');\r\n\r\n\r\nhome.appendChild(h1);\r\nhome.appendChild(p);\r\nhome.appendChild(img);\r\n\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\r\n\n\n//# sourceURL=webpack:///./src/tab/home.js?");
+
+/***/ }),
+
+/***/ "./src/tab/menu.js":
+/*!*************************!*\
+  !*** ./src/tab/menu.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n//const menu = document.createElement('div');\r\n\r\n//const h1 = document.createElement('h1');\r\n//h1.className = \"display-4\";\r\n//h1.innerHTML = 'restaurant-js-webpack';\r\n\r\n//const p = document.createElement('p');\r\n//p.className = \"lead\";\r\n//p.innerHTML = 'this is a simple js library app';\r\n\r\n\r\n//home.appendChild(h1);\r\n//home.appendChild(p);\r\n\r\nconst menu = \r\n\r\n`\r\n<div class=\"container p-1\">\r\n  <div class=\"card-group mt-4\">\r\n    <div class=\"card\">\r\n      <img src=\"...\" class=\"card-img-top\" alt=\"...\">\r\n      <div class=\"card-body\">\r\n        <h5 class=\"card-title\">Card title</h5>\r\n        <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n        <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card\">\r\n      <img src=\"...\" class=\"card-img-top\" alt=\"...\">\r\n      <div class=\"card-body\">\r\n        <h5 class=\"card-title\">Card title</h5>\r\n        <p class=\"card-text\">This card has supporting text below as a natural lead-in to additional content.</p>\r\n        <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card\">\r\n      <img src=\"...\" class=\"card-img-top\" alt=\"...\">\r\n      <div class=\"card-body\">\r\n        <h5 class=\"card-title\">Card title</h5>\r\n        <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>\r\n        <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"card-group mt-4\">\r\n    <div class=\"card\">\r\n      <img src=\"...\" class=\"card-img-top\" alt=\"...\">\r\n      <div class=\"card-body\">\r\n        <h5 class=\"card-title\">Card title</h5>\r\n        <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n        <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card\">\r\n      <img src=\"...\" class=\"card-img-top\" alt=\"...\">\r\n      <div class=\"card-body\">\r\n        <h5 class=\"card-title\">Card title</h5>\r\n        <p class=\"card-text\">This card has supporting text below as a natural lead-in to additional content.</p>\r\n        <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\r\n      </div>\r\n    </div>\r\n    <div class=\"card\">\r\n      <img src=\"...\" class=\"card-img-top\" alt=\"...\">\r\n      <div class=\"card-body\">\r\n        <h5 class=\"card-title\">Card title</h5>\r\n        <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>\r\n        <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n`\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (menu);\r\n\n\n//# sourceURL=webpack:///./src/tab/menu.js?");
 
 /***/ })
 

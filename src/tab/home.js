@@ -9,9 +9,17 @@ const p = document.createElement('p');
 p.className = "lead";
 p.innerHTML = 'this is a simple js library app';
 
+const img = document.createElement('img');
+//img.className = "lead";
+img.setAttribute('src', '/home.jpg');
+img.setAttribute('alt', 'na');
+img.setAttribute('height', '1px');
+img.setAttribute('width', '1px');
+
 
 home.appendChild(h1);
 home.appendChild(p);
+home.appendChild(img);
 
 
 export default home;

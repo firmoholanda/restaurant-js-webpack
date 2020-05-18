@@ -1,12 +1,13 @@
 // import stylesheets
-import './style.css';
+import './css/style.css';
 // import bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import modules
 import navbar from './navbar';
-import home from './home';
 import footer from './footer';
+import home from './tab/home';
+import menu from './tab/menu';
 
 
 const main = document.querySelector('#content');
@@ -27,7 +28,7 @@ nav.addEventListener('click', e => {
 
     switch (selectedMenu) {
       case "menu":
-        activeInfo.innerHTML = menu.outerHTML;
+        activeInfo.innerHTML = menu;
         break;
       case "contact":
         activeInfo.innerHTML = contact.outerHTML;
