@@ -1,3 +1,5 @@
+import homeImg from '../img/home.jpg';
+
 const home = document.createElement('div');
 home.className = "jumbotron m-3 p-3";
 
@@ -9,13 +11,11 @@ const p = document.createElement('p');
 p.className = "lead";
 p.innerHTML = 'this is a simple js library app';
 
-const img = document.createElement('img');
-//img.className = "lead";
-img.setAttribute('src', '/home.jpg');
-img.setAttribute('alt', 'na');
-img.setAttribute('height', '1px');
-img.setAttribute('width', '1px');
-
+const img = new Image();
+img.src = homeImg;
+img.className = "avatar";
+img.setAttribute('width', '100%');
+img.setAttribute('object-fit', 'cover');
 
 home.appendChild(h1);
 home.appendChild(p);

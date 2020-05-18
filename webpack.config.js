@@ -1,7 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',      // "production" | "development" | "none"
+  //mode: 'development',      // "production" | "development" | "none"
+  mode: 'production',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
