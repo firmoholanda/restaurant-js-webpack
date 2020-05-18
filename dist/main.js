@@ -115,7 +115,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"/* universal */\\r\\nhtml, body {\\r\\n  font-size: 16px;\\r\\n  overflow-x: hidden;\\r\\n}\\r\\n\\r\\n/* footer */\\r\\nfooter {\\r\\n  padding-right: 30px;\\r\\n  padding-bottom: 30px;\\r\\n}\\r\\n\\r\\nfooter small {\\r\\n  float: right;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"/* universal */\\r\\nhtml, body {\\r\\n  font-size: 16px;\\r\\n  overflow-x: hidden;\\r\\n}\\r\\n\\r\\n/* footer */\\r\\nfooter {\\r\\n  padding: 20px;\\r\\n}\\r\\n\\r\\nfooter small {\\r\\n  float: right;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -143,6 +143,18 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst hr = document.createElement('hr');\r\nhr.className = \"my-4\";\r\n\r\nconst footer = document.createElement('footer');\r\nfooter.className = \"footer\";\r\n\r\nconst small = document.createElement('small');\r\nsmall.innerHTML = 'restaurant-js-webpack created by: ';\r\n\r\nconst a = document.createElement('a');\r\na.innerHTML = 'firmo holanda';\r\na.setAttribute('href', 'https://github.com/firmoholanda');\r\n\r\nfooter.appendChild(hr);\r\nfooter.appendChild(small);\r\nsmall.appendChild(a);\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (footer);\r\n\n\n//# sourceURL=webpack:///./src/footer.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -151,7 +163,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\r\nconst home = document.createElement('div');\r\nhome.className = \"jumbotron m-3 p-3\";\r\n\r\nconst h1 = document.createElement('h1');\r\nh1.className = \"display-4\";\r\nh1.innerHTML = 'restaurant-js-webpack';\r\n\r\nconst p = document.createElement('p');\r\np.className = \"lead\";\r\np.innerHTML = 'this is a simple js library app';\r\n\r\n\r\nhome.appendChild(h1);\r\nhome.appendChild(p);\r\n\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\n\n//# sourceURL=webpack:///./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst home = document.createElement('div');\r\nhome.className = \"jumbotron m-3 p-3\";\r\n\r\nconst h1 = document.createElement('h1');\r\nh1.className = \"display-4\";\r\nh1.innerHTML = 'restaurant-js-webpack';\r\n\r\nconst p = document.createElement('p');\r\np.className = \"lead\";\r\np.innerHTML = 'this is a simple js library app';\r\n\r\n\r\nhome.appendChild(h1);\r\nhome.appendChild(p);\r\n\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (home);\r\n\n\n//# sourceURL=webpack:///./src/home.js?");
 
 /***/ }),
 
@@ -163,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n\r\nconst home = document.cre
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n// import stylesheets\r\n\r\n// import bootstrap\r\n\r\n\r\n// import modules\r\n\r\n\r\n\r\nconst view = (() => {\r\n  const main = document.querySelector('#content');\r\n\r\n  const updateView = () => {\r\n    main.appendChild(_home__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\r\n    main.appendChild(_navbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\r\n    //home.appendChild(aboutContent);\r\n    //home.appendChild(menuContent);\r\n    //home.appendChild(contactContent);\r\n\r\n    document.body.appendChild(main);\r\n  };\r\n\r\n  return { updateView };\r\n})();\r\n\r\nview.updateView();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n// import stylesheets\r\n\r\n// import bootstrap\r\n\r\n\r\n// import modules\r\n\r\n\r\n\r\n\r\n\r\nconst main = document.querySelector('#content');\r\n\r\nmain.insertAdjacentHTML(\"beforeEnd\", _navbar__WEBPACK_IMPORTED_MODULE_2__[\"default\"].outerHTML);\r\nmain.insertAdjacentHTML(\"beforeEnd\", `<div class=\"activeInfo\"></div>`)\r\nmain.insertAdjacentHTML(\"beforeEnd\", _footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"].outerHTML);\r\n\r\n\r\nconst activeInfo = document.querySelector(\".activeInfo\")\r\nactiveInfo.innerHTML = _home__WEBPACK_IMPORTED_MODULE_3__[\"default\"].outerHTML;\r\n\r\nlet nav = document.querySelector(\".navbar\")\r\n\r\nnav.addEventListener('click', e => {\r\n  if (e.target && e.target.classList.contains(\"nav-link\")) {    \r\n    let selectedMenu = e.target.outerText;\r\n\r\n    switch (selectedMenu) {\r\n      case \"menu\":\r\n        activeInfo.innerHTML = menu.outerHTML;\r\n        break;\r\n      case \"contact\":\r\n        activeInfo.innerHTML = contact.outerHTML;\r\n        break;\r\n      case \"about\":\r\n        activeInfo.innerHTML = about.outerHTML;\r\n        break;\r\n      default:\r\n        activeInfo.innerHTML = _home__WEBPACK_IMPORTED_MODULE_3__[\"default\"].outerHTML;\r\n    }\r\n  }\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -175,7 +187,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst navbar = document.createElement('nav');\r\n\r\nconst ul = document.createElement('ul');\r\nul.className = 'nav nav-tabs';\r\n\r\nfunction createMenuItem(menuItems) {\r\n  menuItems.forEach((menuItem) => {\r\n    const li = document.createElement('li');\r\n    const a = document.createElement('a');\r\n    a.id = menuItem;\r\n    a.appendChild(document.createTextNode(menuItem));\r\n    a.className = 'nav-link';\r\n    li.appendChild(a);\r\n    li.className = 'nav-item';\r\n    ul.appendChild(li);\r\n  });\r\n}\r\n\r\ncreateMenuItem(['home', 'menu', 'contact', 'about']);\r\n\r\nnavbar.appendChild(ul);\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (navbar);\r\n\n\n//# sourceURL=webpack:///./src/navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst navbar = document.createElement('nav');\r\nnavbar.className = 'navbar navbar-expand-lg navbar-light bg-light';\r\n\r\nconst ul = document.createElement('ul');\r\nul.className = 'nav nav-tabs';\r\n\r\nfunction createMenuItem(menuItems) {\r\n  menuItems.forEach((menuItem) => {\r\n    const li = document.createElement('li');\r\n    const a = document.createElement('a');\r\n    \r\n    a.id = menuItem;\r\n    a.appendChild(document.createTextNode(menuItem));\r\n    a.className = 'nav-link';\r\n    a.setAttribute('href', '#');\r\n\r\n    li.appendChild(a);\r\n    li.className = 'nav-item';\r\n\r\n    ul.appendChild(li);\r\n  });\r\n}\r\n\r\ncreateMenuItem(['home', 'menu', 'contact', 'about']);\r\n\r\nnavbar.appendChild(ul);\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (navbar);\r\n\n\n//# sourceURL=webpack:///./src/navbar.js?");
 
 /***/ }),
 

@@ -1,4 +1,3 @@
-
 const home = document.createElement('div');
 home.className = "jumbotron m-3 p-3";
 

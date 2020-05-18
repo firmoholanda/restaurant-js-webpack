@@ -6,8 +6,7 @@ html, body {
 
 /* footer */
 footer {
-  padding-right: 30px;
-  padding-bottom: 30px;
+  padding: 20px;
 }
 
 footer small {

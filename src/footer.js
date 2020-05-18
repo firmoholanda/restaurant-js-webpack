@@ -1,23 +1,18 @@
-const navbar = document.createElement('nav');
+const hr = document.createElement('hr');
+hr.className = "my-4";
 
-const ul = document.createElement('ul');
-ul.className = 'nav nav-tabs';
+const footer = document.createElement('footer');
+footer.className = "footer";
 
-function createMenuItem(menuItems) {
-  menuItems.forEach((menuItem) => {
-    const li = document.createElement('li');
-    const a = document.createElement('a');
-    a.id = menuItem;
-    a.appendChild(document.createTextNode(menuItem));
-    a.className = 'nav-link';
-    li.appendChild(a);
-    li.className = 'nav-item';
-    ul.appendChild(li);
-  });
-}
+const small = document.createElement('small');
+small.innerHTML = 'restaurant-js-webpack created by: ';
 
-createMenuItem(['home', 'menu', 'contact', 'about']);
+const a = document.createElement('a');
+a.innerHTML = 'firmo holanda';
+a.setAttribute('href', 'https://github.com/firmoholanda');
 
-navbar.appendChild(ul);
+footer.appendChild(hr);
+footer.appendChild(small);
+small.appendChild(a);
 
-export default navbar;
+export default footer;
