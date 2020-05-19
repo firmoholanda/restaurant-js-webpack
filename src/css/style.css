@@ -4,6 +4,11 @@ html, body {
   overflow-x: hidden;
 }
 
+/* imges */
+img {
+  object-fit: cover;
+}
+
 /* footer */
 footer {
   padding: 20px;
