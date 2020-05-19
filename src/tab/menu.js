@@ -14,9 +14,9 @@ function createCard(title, imageNumb, price) {
 
   const img = new Image();
   img.className = 'card-img-top';
-  if (imageNumb == 1) { img.src = menuImg01; }
-  if (imageNumb == 2) { img.src = menuImg02; }
-  if (imageNumb == 3) { img.src = menuImg03; }
+  if (imageNumb === 1) { img.src = menuImg01; }
+  if (imageNumb === 2) { img.src = menuImg02; }
+  if (imageNumb === 3) { img.src = menuImg03; }
   img.setAttribute('height', '330px');
 
   const cardBody = document.createElement('div');

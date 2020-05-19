@@ -23,7 +23,7 @@ h3.innerHTML = 'restaurant history'
 
 const p = document.createElement('p');
 p.className = 'text-justify lead';
-p.innerHTML = 'amet magna amet incididunt cupidatat labore ad id aute nisi ea reprehenderit sunt reprehenderit. Labore magna occaecat reprehenderit velit ex deserunt deserunt esse est. Nisi ad eiusmod pariatur consectetur ullamco consequat enim ex sunt aliquip cillum excepteur incididunt. Voluptate in velit sit eu cillum do voluptate do nisi duis. Occaecat dolore enim sit sunt in officia sunt sunt qui qui nulla irure minim. Esse quis laborum ut elit irure. Ea dolor elit tempor duis laborum proident consectetur pariatur nulla. Do aute pariatur qui velit id magna ut commodo officia cillum. Id sunt nisi reprehenderit tempor mollit dolor do officia.'
+p.innerHTML = 'amet magna amet incididunt cupidatat labore ad id aute nisi ea reprehenderit sunt reprehenderit. Labore magna occaecat reprehenderit velit ex deserunt deserunt esse est. Nisi ad eiusmod pariatur consectetur ullamco consequat enim ex sunt aliquip cillum excepteur incididunt. Voluptate in velit sit eu cillum do voluptate do nisi duis. Occaecat dolore enim sit sunt in officia sunt sunt qui qui nulla irure minim. Esse quis laborum ut elit irure. Ea dolor elit tempor duis laborum proident consectetur pariatur nulla. Do aute pariatur qui velit id magna ut commodo officia cillum. Id sunt nisi reprehenderit tempor mollit dolor do officia.';
 
 about.appendChild(row);
 

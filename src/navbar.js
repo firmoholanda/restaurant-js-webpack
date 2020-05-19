@@ -8,7 +8,7 @@ function createMenuItem(menuItems) {
   menuItems.forEach((menuItem) => {
     const li = document.createElement('li');
     const a = document.createElement('a');
-    
+
     a.id = menuItem;
     a.appendChild(document.createTextNode(menuItem));
     a.className = 'nav-link';
@@ -19,7 +19,7 @@ function createMenuItem(menuItems) {
 
     ul.appendChild(li);
   });
-}
+};
 
 createMenuItem(['home', 'menu', 'contact', 'about']);
 

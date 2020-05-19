@@ -1,7 +1,6 @@
 // import stylesheets
 import './css/style.css';
 // import bootstrap
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import modules
 import navbar from './navbar';
@@ -23,11 +22,11 @@ const activeInfo = document.querySelector('.activeInfo');
 activeInfo.innerHTML = home.outerHTML;
 
 
-let nav = document.querySelector('.navbar');
+const nav = document.querySelector('.navbar');
 
 nav.addEventListener('click', e => {
-  if (e.target && e.target.classList.contains('nav-link')) {    
-    let selectedMenu = e.target.outerText;
+  if (e.target && e.target.classList.contains('nav-link')) {
+    const selectedMenu = e.target.outerText;
 
     switch (selectedMenu) {
       case 'menu':
@@ -43,4 +42,4 @@ nav.addEventListener('click', e => {
         activeInfo.innerHTML = home.outerHTML;
     }
   }
-})
+});
