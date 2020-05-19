@@ -1,8 +1,8 @@
 const hr = document.createElement('hr');
-hr.className = "my-4";
+hr.className = 'my-4';
 
 const footer = document.createElement('footer');
-footer.className = "footer";
+footer.className = 'footer';
 
 const small = document.createElement('small');
 small.innerHTML = 'restaurant-js-webpack created by: ';

@@ -14,30 +14,30 @@ import about from   './tab/about';
 
 const main = document.querySelector('#content');
 
-main.insertAdjacentHTML("beforeEnd", navbar.outerHTML);
-main.insertAdjacentHTML("beforeEnd", `<div class="activeInfo"></div>`)
-main.insertAdjacentHTML("beforeEnd", footer.outerHTML);
+main.insertAdjacentHTML('beforeEnd', navbar.outerHTML);
+main.insertAdjacentHTML('beforeEnd', `<div class='activeInfo'></div>`)
+main.insertAdjacentHTML('beforeEnd', footer.outerHTML);
 
 
-const activeInfo = document.querySelector(".activeInfo")
+const activeInfo = document.querySelector('.activeInfo')
 //activeInfo.innerHTML = about.outerHTML;
 activeInfo.innerHTML = home.outerHTML;
 
 
-let nav = document.querySelector(".navbar")
+let nav = document.querySelector('.navbar')
 
 nav.addEventListener('click', e => {
-  if (e.target && e.target.classList.contains("nav-link")) {    
+  if (e.target && e.target.classList.contains('nav-link')) {    
     let selectedMenu = e.target.outerText;
 
     switch (selectedMenu) {
-      case "menu":
+      case 'menu':
         activeInfo.innerHTML = menu.outerHTML;
         break;
-      case "contact":
+      case 'contact':
         activeInfo.innerHTML = contact.outerHTML;
         break;
-      case "about":
+      case 'about':
         activeInfo.innerHTML = about.outerHTML;
         break;
       default:
