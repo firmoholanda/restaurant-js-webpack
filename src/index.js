@@ -1,30 +1,29 @@
 // import stylesheets
 import './css/style.css';
 // import bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import modules
-import navbar from  './navbar';
-import footer from  './footer';
-import home from    './tab/home';
-import menu from    './tab/menu';
+import navbar from './navbar';
+import footer from './footer';
+import home from './tab/home';
+import menu from './tab/menu';
 import contact from './tab/contact';
-import about from   './tab/about';
+import about from './tab/about';
 
 
 const main = document.querySelector('#content');
 
 main.insertAdjacentHTML('beforeEnd', navbar.outerHTML);
-main.insertAdjacentHTML('beforeEnd', `<div class='activeInfo'></div>`)
+main.insertAdjacentHTML('beforeEnd', `<div class='activeInfo'></div>`);
 main.insertAdjacentHTML('beforeEnd', footer.outerHTML);
 
 
-const activeInfo = document.querySelector('.activeInfo')
-//activeInfo.innerHTML = about.outerHTML;
+const activeInfo = document.querySelector('.activeInfo');
 activeInfo.innerHTML = home.outerHTML;
 
 
-let nav = document.querySelector('.navbar')
+let nav = document.querySelector('.navbar');
 
 nav.addEventListener('click', e => {
   if (e.target && e.target.classList.contains('nav-link')) {    
