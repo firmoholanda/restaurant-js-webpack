@@ -4,10 +4,12 @@ import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import modules
-import navbar from './navbar';
-import footer from './footer';
-import home from './tab/home';
-import menu from './tab/menu';
+import navbar from  './navbar';
+import footer from  './footer';
+import home from    './tab/home';
+import menu from    './tab/menu';
+import contact from './tab/contact';
+import about from   './tab/about';
 
 
 const main = document.querySelector('#content');
@@ -18,7 +20,7 @@ main.insertAdjacentHTML("beforeEnd", footer.outerHTML);
 
 
 const activeInfo = document.querySelector(".activeInfo")
-activeInfo.innerHTML = menu.outerHTML;
+activeInfo.innerHTML = contact;
 
 
 let nav = document.querySelector(".navbar")
@@ -32,10 +34,10 @@ nav.addEventListener('click', e => {
         activeInfo.innerHTML = menu.outerHTML;
         break;
       case "contact":
-        activeInfo.innerHTML = contact.outerHTML;
+        activeInfo.innerHTML = contact;
         break;
       case "about":
-        activeInfo.innerHTML = about.outerHTML;
+        activeInfo.innerHTML = about;
         break;
       default:
         activeInfo.innerHTML = home.outerHTML;

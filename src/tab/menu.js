@@ -48,5 +48,4 @@ cardGroup.appendChild(createCard("salad", 1, 10));
 cardGroup.appendChild(createCard("steak", 2, 30));
 cardGroup.appendChild(createCard("lobster", 3, 50));
 
-
 export default menu;
