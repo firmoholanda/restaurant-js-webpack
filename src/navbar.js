@@ -19,7 +19,7 @@ function createMenuItem(menuItems) {
 
     ul.appendChild(li);
   });
-};
+}
 
 createMenuItem(['home', 'menu', 'contact', 'about']);
 

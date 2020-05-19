@@ -19,7 +19,7 @@ col02.className = 'col';
 
 const h3 = document.createElement('h3');
 h3.className = 'text-center mb-5';
-h3.innerHTML = 'restaurant history'
+h3.innerHTML = 'restaurant history';
 
 const p = document.createElement('p');
 p.className = 'text-justify lead';

@@ -28,7 +28,7 @@ function createCard(title, imageNumb, price) {
 
   const p = document.createElement('p');
   p.className = 'card-title';
-  p.innerHTML = 'laborum consectetur nostrud quis culpa culpa id labore qui nostrud culpa in occaecat esse. Sint id excepteur nostrud minim exercitation. Dolor sit officia aliquip nulla cillum velit. Excepteur sunt dolor qui ea pariatur voluptate non eiusmod excepteur amet. Laboris occaecat excepteur fugiat officia culpa ea excepteur ipsum aliqua do ipsum'
+  p.innerHTML = 'laborum consectetur nostrud quis culpa culpa id labore qui nostrud culpa in occaecat esse. Sint id excepteur nostrud minim exercitation. Dolor sit officia aliquip nulla cillum velit. Excepteur sunt dolor qui ea pariatur voluptate non eiusmod excepteur amet. Laboris occaecat excepteur fugiat officia culpa ea excepteur ipsum aliqua do ipsum';
 
   const small = document.createElement('small');
   small.className = 'card-text text-muted';
