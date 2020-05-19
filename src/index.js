@@ -20,7 +20,7 @@ main.insertAdjacentHTML("beforeEnd", footer.outerHTML);
 
 
 const activeInfo = document.querySelector(".activeInfo")
-activeInfo.innerHTML = contact.outerHTML;
+activeInfo.innerHTML = about.outerHTML;
 
 
 let nav = document.querySelector(".navbar")
@@ -37,7 +37,7 @@ nav.addEventListener('click', e => {
         activeInfo.innerHTML = contact.outerHTML;
         break;
       case "about":
-        activeInfo.innerHTML = about;
+        activeInfo.innerHTML = about.outerHTML;
         break;
       default:
         activeInfo.innerHTML = home.outerHTML;
