@@ -1,6 +1,7 @@
 // import stylesheets
 import './css/style.css';
 // import bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import modules
 import navbar from './navbar';
@@ -14,7 +15,7 @@ import about from './tab/about';
 const main = document.querySelector('#content');
 
 main.insertAdjacentHTML('beforeEnd', navbar.outerHTML);
-main.insertAdjacentHTML('beforeEnd', `<div class='activeInfo'></div>`);
+main.insertAdjacentHTML('beforeEnd', '<div class="activeInfo"></div>');
 main.insertAdjacentHTML('beforeEnd', footer.outerHTML);
 
 

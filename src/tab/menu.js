@@ -32,7 +32,7 @@ function createCard(title, imageNumb, price) {
 
   const small = document.createElement('small');
   small.className = 'card-text text-muted';
-  small.innerHTML = 'USD$ ' + price;
+  small.innerHTML = `USD$  ${price}`;
 
   card.appendChild(img);
   card.appendChild(cardBody);
