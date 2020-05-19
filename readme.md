@@ -17,7 +17,7 @@ bootstrap, jquery, webpacker and git was used on this project.
 
 ## 🚀 the project
 
-this project can be found in https://github.com/firmoholanda/firmoholanda.github.io
+this project can be found in https://github.com/firmoholanda/restaurant-js-webpack
 
 
 ### ✨ [live version](https://raw.githack.com/firmoholanda/restaurant-js-webpack/release/dist/index.html#)
