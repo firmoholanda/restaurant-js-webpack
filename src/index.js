@@ -20,7 +20,8 @@ main.insertAdjacentHTML("beforeEnd", footer.outerHTML);
 
 
 const activeInfo = document.querySelector(".activeInfo")
-activeInfo.innerHTML = about.outerHTML;
+//activeInfo.innerHTML = about.outerHTML;
+activeInfo.innerHTML = home.outerHTML;
 
 
 let nav = document.querySelector(".navbar")
