@@ -1,7 +1,7 @@
 // import stylesheets
 import './css/style.css';
 // import bootstrap
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import modules
 import navbar from './navbar';
