@@ -1,8 +1,7 @@
-/* eslint import/no-unresolved: [2, { ignore: ['\.img$'] }] */
-
 // import stylesheets
 import './css/style.css';
 // import bootstrap
+import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import modules
