@@ -1,9 +1,6 @@
 // import stylesheets
 import './css/style.css';
 
-// import bootstrap
-import 'bootstrap';
-
 // import modules
 import navbar from './navbar';
 import footer from './footer';
