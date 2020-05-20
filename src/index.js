@@ -1,4 +1,4 @@
-/*eslint import/no-unresolved: [2, { ignore: ['\.img$'] }]*/
+/* eslint import/no-unresolved: [2, { ignore: ['\.img$'] }] */
 
 // import stylesheets
 import './css/style.css';
